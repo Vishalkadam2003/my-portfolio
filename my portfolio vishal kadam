@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal Kadam Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --bg-color: white;
+            --text-color: white;
+            --header-bg: rgba(0, 0, 0, 0.8);
+            --section-bg: rgba(0, 0, 0, 0.1);
+            --link-color: #0073e6;
+        }
+
+        .dark-mode {
+            --bg-color: #333;
+            --text-color: white;
+            --header-bg: #1e1e1e;
+            --section-bg: rgba(255, 255, 255, 0.1); 
+            --link-color: #4dabf7;
+            background-image: url('https://www.teahub.io/photos/full/93-938757_75-web-website-background-color.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://wallpaperboat.com/wp-content/uploads/2019/10/best-background-for-website-14.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--text-color);
+            text-align: center;
+            transition: 0.3s ease-in-out;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background: transparent;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--link-color);
+            text-decoration: underline;
+        }
+
+        header {
+    padding: 120px 50px 50px; /* Increase top padding */
+    color: white;
+    text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        section {
+            margin: 50px auto;
+            padding: 20px;
+            max-width: 900px;
+            background: var(--section-bg);
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+
+       section, section * {
+    color: var(--text-color) !important; /* Ensures all nested elements inside sections are white */
+}
+
+
+        ul {
+            list-style: none;
+            padding: 0 20px;
+        }
+
+        li {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+	    margin-top: 500px
+            margin-bottom: 10px;
+            border: 5px solid white;
+        }
+
+        .project-img {
+            width: 100%;
+            max-height: 600px;
+            border-radius: 20px;
+            margin-top: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .skill-img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .skill-list li {
+            display: flex;
+            align-items: center;
+        }
+
+        .toggle-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--header-bg);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            z-index: 1100; /* Ensures it's clickable above nav */
+        }
+
+        .toggle-btn:hover {
+            background: var(--link-color);
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background: var(--header-bg);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="toggle-btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+
+    
+    <header>
+        <img src="C:\Users\HP\OneDrive\Pictures\mypicture.jpg" alt="Vishal's Profile Photo" class="profile-img">
+        <h1>Vishal Kadam</h1>
+        <p><h2>Computer Science Engineering Specialized in AI & Data Science</h2></p>
+    </header>
+    
+   <section id="about">
+        <h1>About Me </h1>
+        <ul style="list-style-type: disc; color: black;"><section>
+            <li> AI & Data Science Engineering student passionate about Machine Learning and Data Analytics. I am currently Learning Advanced things in my Field.</li>
+            <li>Working on multiple AI projects solving real-world problems.</li>
+	    <li>Enthusiastic about solving real-world problems using AI-powered technologies</li>
+	    <li>Skilled in Python, Machine Learning frameworks, and data visualization tools.</li>
+	    <li>Experienced in developing projects integrating speech recognition, emotion detection, and predictive analytics.</li>
+	    <li>Passionate about building innovative solutions that enhance accessibility and decision-making.</li></section>
+        </ul>
+    </section>
+    
+    <section id="education">
+        <h1>Education</h1>
+        
+        <ul style="list-style-type: disc; color: black;">
+     <section id="Btech">
+            <li><strong><h2>Bachelor of Technology :</h2></strong></li><li> Dr. Babasaheb Ambedkar Technological University, Lonere (2022-2026)</li>
+	     <li> pad.Vasantraodada Patil Institute of Technology, Sangli</li>
+	     <li> Trade: Computer Science Engineering Specialized in Artificial Intelligence and Data Science</li>
+	    <li> Currently Studying .......</li><br>
+     </section> 
+      <section id="high school">
+            <li><strong><h2>High Secondary School(12th)-Science:</h2></strong></li>
+	    <li> Shri Marutrao Krushnaji Mane Junior College, Deur. (2019-2021)</li>
+	    <li>Subjects: Physics, Chemistry, Mathematics, Biology, English.</li>
+	    <li> Percentages : 71.80% </li><br> 
+	</section>
+	<section>
+	    <li><strong><h2>Secondary Education (10th)</h2></strong></li><li>Shri Mudhaidevi Vidyamandir,Deur (2015-2019)</li>
+	    <li> Percentages: 78.60%</li><br>
+	</section>
+        </ul>
+    </section>
+    
+    <section id="internship">
+        <h1>Internship</h1>
+        <ul style="list-style-type: disc; color: black;">
+	<section>
+            <li><strong><h2>Data Science Intern - Coratia Technologies</h2></strong></li>
+            <li>Worked on machine learning models for predictive analysis.</li>
+            <li>Enhanced model accuracy by 15%.</li>
+            <li>Gained hands-on experience with real-world business applications.</li>
+	<p><a href="https://www.linkedin.com/posts/vishal-kadam-13713a262_datascience-internship-teachnook-activity-7166275014990675968-LmwW?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEByozsBljeeXpB536k7IlRZ7XHxOd62AIU">See Certification</a></p></section>
+
+	<section>
+	<li><strong><h2>AI Internship: Pantech Solutions<h2></strong></li>
+	<li>Worked on 3 to 4 small AI and Machine Learning projects.</li>
+	<li>Gained hands-on experience in 4 to 5 AI-based detection technologies (e.g., Object Detection, Face Recognition, Emotion Detection, etc.).</li>
+	<li>Developed and implemented AI models for real-world applications.</li>
+	<li>Enhanced skills in Python, OpenCV, TensorFlow, and other AI frameworks.</li>
+	<li>Learned about model training, optimization, and deployment techniques.</li>
+	<p><a href="https://www.linkedin.com/posts/vishal-kadam-13713a262_aiinternship-artificialintelligence-aiprojects-activity-7183656021238710273-wIp3?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEByozsBljeeXpB536k7IlRZ7XHxOd62AIU">See Certification</a></p>
+
+	
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h1>Skills</h1>
+        <ul class="skill-list">
+            <section><li><img src="C:\Users\HP\OneDrive\Pictures\py - Copy.png" alt="Python" class="skill-img"><strong>Python:</strong> NumPy, Pandas, Matplotlib, Seaborn.</li></section>
+            <section><li><img src="C:\Users\HP\OneDrive\Pictures\ml logo.png" alt="ML" class="skill-img"><strong>Machine Learning:</strong> Supervised & Unsupervised Learning, Scikit-learn, TensorFlow, PyTorch.</li></section>
+            <section><li><img src="C:\Users\HP\OneDrive\Pictures\da logo.png" alt="Data Analytics" class="skill-img"><strong>Data Analytics:</strong> Data Wrangling, Visualization using Power BI/Tableau.</li></section>
+            <section><li><img src="C:\Users\HP\OneDrive\Pictures\sql logo.png" alt="SQL" class="skill-img"><strong>SQL & DBMS:</strong> MySQL, Relational Databases,MongoDB.</li></section>
+            <section><li><img src="C:\Users\HP\OneDrive\Pictures\ai logo.png" alt="AI" class="skill-img"><strong>Artificial Intelligence:</strong> Neural Networks, NLP, Computer Vision.</li></section>
+        </ul>
+    </section>
+    
+    <section id="projects">
+        <h1>Projects</h1>
+        <h2>MDRS: Multi-model Detection and Response System</h2>
+        <img src="C:\Users\HP\OneDrive\Pictures\mdrs - Copy.jpg" alt="MDRS Project" class="project-img"><section>
+        <ul style="list-style-type: disc; color: black;"><section>
+	<li><h2>Project Overview</h2><li>
+            <li>AI-powered system enhancing accessibility for students and physically challenged individuals.</li>
+            <li>Integrates speech recognition, emotion detection, and motion tracking.</li></section>
+	<section>
+	<li><h2>Key Features: </h2></li>
+	<li>Speech Recognition: Converts spoken words into text with high accuracy.</li>
+	<li>Emotion Detection: Analyzes facial expressions to determine emotional states.</li>
+	<li>Motion Tracking: Detects and interprets body movements for enhanced interaction.</li>
+	<li>Instant Search Feature: Stores recognized text, allowing students to search for answers quickly.</li></section>
+	<section>
+	<li><h2>Technologies Used</h2></li>
+	<li>Python, TensorFlow, OpenCV, NLP (Natural Language Processing), and Machine Learning models.</li></section><section>
+	<li><h2>Achievements<h2></li>
+	<li>Achieved 90% accuracy in speech-to-text conversion.
+</li>
+	<li>Improved classroom engagement and accessibility for students with special needs.</li>
+	<li>Reduced response time in interactive learning environments.
+</li></section><section>
+	<li><h2>Real World Impact</h2></li>
+	<li>Helps physically challenged individuals communicate more effectively.
+</li>
+	<li>Assists students in better understanding and retaining classroom content.
+</li>
+            <li>Achieved 90% accuracy in speech-to-text conversion.</li>
+        </ul></section></section>
+    </section>
+    
+    <section id="contact">
+        <h1>Contact</h1>
+        <ul style="list-style-type: ; color: black;"><section>
+            <section><li><h2>Email:</h2>
+ <a href="mailto:vishalkadamofficiall@gmail.com">vishalkadamofficiall@gmail.com</a></li></section>
+            <section><li><h2>LinkedIn:</h2>
+ <a href="https://www.linkedin.com/in/vishal-kadam-13713a262/" target="_blank">Vishal Kadam</a></li></section>
+            <section><li><h2>GitHub:</h2>
+ <a href="https://github.com/Vishalkadam2003" target="_blank">Vishal Kadam</a></li></section>
+	</section>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Vishal Kadam. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+            let btn = document.querySelector(".toggle-btn");
+            if (document.body.classList.contains("dark-mode")) {
+                btn.innerHTML = "☀️ Light Mode";
+            } else {
+                btn.innerHTML = "🌙 Dark Mode";
+            }
+        }
+    </script>
+</body>
+</html>
